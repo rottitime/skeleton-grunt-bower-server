@@ -1,0 +1,95 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+    line-height: 20px;
+    font-family: $font-style-simple;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: $font-style-fancy;
+	color: $font-black;
+	text-transform: uppercase;
+	line-height: 1;
+}
+
+h1, h2, h3, h4, h5, ol, p, ul {
+	margin-top: 0;
+}
+
+h1 {
+	font-size:10px;
+	@media #{$tablet} {
+		font-size:20px;
+	}
+
+	&:before {
+		font-size:11px;
+		@include icon($fa-var-chevron-left);
+	}
+}
+
+
+ol, p, ul {
+	font-size: 14px;
+}
+
+ol, ul {
+	padding: 0;
+}
+
+p {
+	font-size:12px;
+}
+
+a {
+	cursor: pointer;
+	color: $blue;
+	text-decoration: none;
+	transition: color 0.5s;
+	&:hover {
+		color: $blue-light;
+	}
+}
+
+li {
+	list-style: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+section {
+	&.center {
+		text-align: center;
+	}
+}
+
+img {
+	&.full {
+		max-width: 80%;
+		border:$img-border-width solid $white;
+		box-shadow: 0 3px 12px 0.06px $box-shadow-color;
+		border-radius: 4px;
+		margin-bottom: $page-spacing-y;
+		@media #{$tablet} {
+			margin-right: $page-spacing-x;
+			width: calc(100% - #{$img-border-width});
+			max-width: 40%;
+			float: left;
+		}
+
+
+	}
+}
+
+@-webkit-keyframes loader-spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes loader-spin { 100% { transform:rotate(360deg); } }
+
+
+@-webkit-keyframes banner-shrink { 100% { background-size:100%; } }
+@keyframes banner-shrink { 100% { background-size:100%; } }

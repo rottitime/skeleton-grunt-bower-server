@@ -1,0 +1,22 @@
+{
+  "name": "skeletonsite",
+  "description": "Skeleton site",
+  "main": "index.html",
+  "authors": [
+    "jaggarwa <webmaster@jaspaul.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/inc/bower_components"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#^4.7.0",
+    "jQuery": "^3.2.1",
+    "featherlight": "^1.7.12",
+    "slick-carousel": "^1.8.1"
+  }
+}

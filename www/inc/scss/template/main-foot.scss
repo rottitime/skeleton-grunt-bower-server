@@ -1,0 +1,66 @@
+
+.main-foot {
+	background-color: rgba($bg-black,0.96);
+	text-align: center;
+	color: $font-white;
+	h2 {
+		margin-bottom: 40px;
+		img {
+			height: 50px;
+			height: 50px;
+			display: block;
+			margin: 0 auto 20px ;
+		}
+	}
+
+	li {
+		display: inline-block;
+		margin: 0 5px;
+		color: $font-white;
+		width: 40px;
+    	height: 40px;
+    	line-height: 40px;
+		border-radius: 50%;
+		text-align: center;
+		background-color: rgba($bg-white,0.1);
+		transition: all .3s;
+		position: relative;
+
+		&:hover {
+			color: $main-color1;
+		}
+
+		//font-icon
+		&:before {
+			font-size: 15px;
+			line-height: 40px;
+		}
+
+		a {
+			display: block;
+			text-indent: -9999px;
+			overflow: hidden;
+			position: absolute;
+			top:0;
+			left:0;
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	//disclaimer
+	p {
+		padding: 20px 0;
+    	background-color: $bg-black;
+		color: rgba(135,135,135,.3);
+		text-transform: uppercase;
+		font-size: 11px;
+		font-weight: 400;
+		letter-spacing: 1px;
+		color: $font-grey;
+	}
+
+	.container {
+		padding: $page-spacing-y $page-spacing-x;
+	}
+}

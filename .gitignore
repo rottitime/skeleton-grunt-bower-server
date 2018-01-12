@@ -1,0 +1,6 @@
+.sass-cache
+node_modules
+
+#website files
+www/files/
+www/images/

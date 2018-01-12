@@ -1,0 +1,29 @@
+.featherlight {
+	&:after {
+		@include icon($fa-var-spinner);
+		position: absolute;
+		font-size: 60px;
+		color: rgba($font-white, 0.8);
+		top: 50%;
+		left: 50%;
+		opacity: 0;
+		-webkit-transition: all .5s;
+		transition: all .5s;
+		-webkit-animation: fa-spin 1s infinite steps(8) .5s;
+		animation:fa-spin 1s infinite steps(8) .5s;
+	}
+	.featherlight-content {
+		opacity: 1;
+		-webkit-transition: all .5s;
+		transition: all .5s;
+	}
+}
+
+.featherlight-loading {
+	.featherlight-content {
+		opacity: 0;
+	}
+	&:after {
+		opacity: 1;
+	}
+}

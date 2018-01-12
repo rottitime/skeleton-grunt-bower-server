@@ -1,0 +1,19 @@
+@import 'variable';
+@import 'functions';
+//vendors
+
+@import url('http://fonts.googleapis.com/css?family=Signika|Open+Sans');
+@import '../bower_components/font-awesome/scss/font-awesome.scss';
+@import '../bower_components/slick-carousel/slick/slick.scss';
+@import '../bower_components/slick-carousel/slick/slick-theme.scss';
+@import '../bower_components/featherlight/release/featherlight.min.css';
+
+@import 'plugins/lightbox';
+@import 'plugins/slick';
+@import 'plugins/font-awesome';
+
+@import 'global/global';
+@import 'global/form';
+@import 'template/main-nav';
+@import 'template/main-foot';
+

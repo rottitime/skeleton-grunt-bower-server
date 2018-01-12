@@ -1,0 +1,100 @@
+.content {
+	h2 {
+	    font-size: 30px;
+	    font-weight: 900;
+	}
+
+	ol, p, ul, cite {
+		margin-bottom: $content-spacing;
+		color: $font-black;
+	    line-height: 27px;
+	    font-size: 15px;
+	    font-weight: 400;
+	    font-family: $font-style-simple;
+	}
+
+	section:nth-child(2n+3) {
+		background-color: $main-color4;
+		ol, p, ul, h2, h3, h4, h5,
+		.slick-dots li button:before {
+			color: $font-white;
+		}
+		cite {
+			color: $font-grey;
+		}
+	}
+
+	blockquote {
+		color: $font-dark;
+		line-height: 27px;
+		letter-spacing: 0;
+		font-size: 15px;
+		font-style: italic;
+		margin: 0 0 $content-spacing;
+		padding-left: 20px;
+		font-weight: bold;
+
+		//quote icons
+		&:before {
+			@include icon($fa-var-quote-left);
+			margin-right: 5px;
+			position: relative;
+			top: -3px;
+		}
+		&:after {
+			@include icon($fa-var-quote-right);
+			position: relative;
+			left: 5px;
+			bottom: -5px;
+		}
+
+		p {
+			display: inline;
+			color: inherit;
+			font-weight: inherit;
+		}
+		+ p > cite {
+			margin-top: -$content-spacing;
+			display: block;
+			text-align: right;
+		}
+	}
+
+	ul {
+		padding-left: 5px;
+	}
+	li:not([class*="fa-"]) {
+		position: relative;
+		padding-left: 16px;
+		&:before {
+			@include icon($fa-var-circle-o);
+			position: absolute;
+			width: 6px;
+			height: 6px;
+			left: 0;
+			margin-top: -3px;
+			top: 12px;
+			font-size: 9px;
+		}
+	}
+
+	.info {
+	    display: flex;
+	    flex-wrap: wrap;
+		font-size: 13px;
+		margin: -#{$info-spacing} -$info-spacing 15px -$info-spacing;
+	    padding-left: 0;
+	    li {
+		    width: calc(40% - #{$info-spacing * 2});
+		    margin: $info-spacing;
+		    padding-left: 0;
+		    &:before {
+				content: normal;
+		    }
+	    }
+	    b {
+	    	color: $font-dark;
+	    	display: block;
+	    }
+	}
+}

@@ -1,0 +1,14 @@
+@mixin icon($icon) {
+    //@include fa-icon;
+    //@extend .fa;
+    //content: "#{$fa-scss-prefix}#{$icon}";
+    //content .#{$fa-css-prefix}-#{$icon};
+
+    //$fi-icon: "@{icon-font-prefix}@{icon}";
+    //$fi-icon: "fa-var-#{$icon}";
+
+
+    //@include .fa--#{$icon}:before;
+    content: '#{$icon}';
+    @extend [class*="#{$fa-css-prefix}-"]:before;
+}

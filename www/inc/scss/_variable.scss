@@ -1,0 +1,57 @@
+//Media queries
+$tablet: "only screen and (min-width: 768px)";
+$desktop: "only screen and (min-width: 1000px)";
+
+//Site colours
+$main-color1: #0b3c5d;	//Prussian blue
+$main-color2: #328cc1;	//Sky blue
+$main-color3: #d98310;	//Gold leaf
+$main-color4: #1d2731;	//ivory black
+
+$black: $main-color4;
+$black-light: #454646;
+$gold: #d9b310;
+$blue: $main-color2;
+$blue-light: #86bedf;
+$blue-dark: $main-color1;
+$white: #fff;
+$main-color: #5c5882;
+$grey: #cacfd2;
+
+//fonts
+$font-white: $white;
+$font-black: $black-light;
+$font-dark: $blue;
+$font-grey: $grey;
+$font-style-simple: 'Open Sans', sans-serif;
+$font-style-fancy: 'Signika', sans-serif;;
+
+//backgrounds
+$bg-black: $black;
+$bg-white: $white;
+
+//image settings
+$img-border-width: 8px;
+
+//page settings
+$page-spacing-y: 30px;
+$page-spacing-x: 20px;
+$box-shadow-color: rgba($black,.26);
+$content-spacing: 15px;
+
+//Individual items
+$info-spacing: 5px;
+
+//Components
+$score-color: $main-color1;
+$score-spacing: 10px;
+
+$thumbnail-spacing: 10px;
+
+$pagiantion-icon-spacing: 5px;
+
+$carousel-button-size: 46px;
+$carousel-arrow-position: 3%;
+
+//Plugin overrides
+$fa-font-path: "../bower_components/font-awesome/fonts";
