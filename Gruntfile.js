@@ -20,21 +20,16 @@ module.exports = function (grunt) {
 				files: dirWeb + 'scss/**/*.scss',
 				tasks: ['sass'],
 				options: {
-					spawn: false,
-
+					livereload: true,
+					spawn: false
 				}
 			},
 			js: {
 				files: jsDevFiles,
 				tasks: ['concat'],
 				options: {
-					spawn: false,
-				}
-			},
-			reload: {
-				files: allFiles,
-				options: {
-					livereload: true
+					livereload: true,
+					spawn: false
 				}
 			}
 		},
